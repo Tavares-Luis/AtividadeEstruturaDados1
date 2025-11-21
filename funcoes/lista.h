@@ -30,4 +30,6 @@ void mostrarTudo(lista_t *lista);
 
 void inserirOrdenado(lista_t *lista, int valor);
 
+void liberarLista(lista_t *lista);
+
 #endif

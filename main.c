@@ -10,6 +10,10 @@ int main() {
     int opcao;
     int valor;
 
+
+    // Comentário Luis: Tentei implementar uma ordenação de lista, mas ainda não consegui entender bem, então não vou estar adicionando
+    // ao trabalho pois seria apenas IA fazendo.
+
     do {
         printf("\n--- MENU DE LISTA ORDENADA ---\n");
         printf("1. Inserir Valor (Ordenado)\n"); 
@@ -56,6 +60,7 @@ int main() {
                 break;
 
             case 5:
+                liberarLista(&listaDeInt);
                 printf("Saindo do programa...\n");
                 break;
 

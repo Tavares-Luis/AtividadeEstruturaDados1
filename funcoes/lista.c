@@ -155,3 +155,23 @@ void inserirOrdenado(lista_t *lista, int valor){
     }
 
 }
+
+void liberarLista(lista_t *lista){
+
+    nodo_t *atual = lista->inicio;
+    nodo_t *proximo = NULL;
+
+    while(atual != NULL){
+
+        proximo = atual->prox;
+
+        free(atual);
+
+        atual = proximo;
+        
+    }
+
+    lista->inicio = NULL;
+
+    printf("\nLista liberada com sucesso. Memoria desalocada. \n");
+}
